@@ -1,0 +1,80 @@
+[2026-06-26 12:30:03] [1] [WARN] Reporting disabled: using no op test run registrar
+[2026-06-26 12:30:03] [1] [INFO] TEST [github-api-tests - testGetExistingUser] STARTED at [16:30:03 2026-06-26]
+[2026-06-26 12:30:03] [1] [INFO] Request method:	GET
+Request URI:	https://api.github.com/users/octocat
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Multiparts:		<none>
+Cookies:		<none>
+Headers:		Accept=*/*
+				Content-Type=application/json; charset=UTF-8
+Body:			<none>
+HTTP/1.1 200 OK
+Date: Fri, 26 Jun 2026 12:30:04 GMT
+Content-Type: application/json; charset=utf-8
+Cache-Control: public, max-age=60, s-maxage=60
+Vary: Accept,Accept-Encoding, Accept, X-Requested-With
+ETag: W/"c5aa768907a49adf872009a97a88f3f32c4be49939b165a2ef4f5fbd239fbc9c"
+Last-Modified: Mon, 22 Jun 2026 11:32:20 GMT
+X-GitHub-Media-Type: github.v3; format=json
+x-github-api-version-selected: 2022-11-28
+Access-Control-Expose-Headers: ETag, Link, Location, Retry-After, X-GitHub-OTP, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Used, X-RateLimit-Resource, X-RateLimit-Reset, X-OAuth-Scopes, X-Accepted-OAuth-Scopes, X-Poll-Interval, X-GitHub-Media-Type, X-GitHub-SSO, X-GitHub-Request-Id, Deprecation, Sunset, Warning
+Access-Control-Allow-Origin: *
+Strict-Transport-Security: max-age=31536000; includeSubdomains; preload
+X-Frame-Options: deny
+X-Content-Type-Options: nosniff
+X-XSS-Protection: 0
+Referrer-Policy: origin-when-cross-origin, strict-origin-when-cross-origin
+Content-Security-Policy: default-src 'none'
+Content-Encoding: gzip
+Server: github.com
+Accept-Ranges: bytes
+X-RateLimit-Limit: 60
+X-RateLimit-Remaining: 57
+X-RateLimit-Used: 3
+X-RateLimit-Resource: core
+X-RateLimit-Reset: 1782480604
+Content-Length: 495
+X-GitHub-Request-Id: FF39:2126F1:36CEB4:33F27B:6A3E70CD
+
+{
+    "login": "octocat",
+    "id": 583231,
+    "node_id": "MDQ6VXNlcjU4MzIzMQ==",
+    "avatar_url": "https://avatars.githubusercontent.com/u/583231?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/octocat",
+    "html_url": "https://github.com/octocat",
+    "followers_url": "https://api.github.com/users/octocat/followers",
+    "following_url": "https://api.github.com/users/octocat/following{/other_user}",
+    "gists_url": "https://api.github.com/users/octocat/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/octocat/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/octocat/subscriptions",
+    "organizations_url": "https://api.github.com/users/octocat/orgs",
+    "repos_url": "https://api.github.com/users/octocat/repos",
+    "events_url": "https://api.github.com/users/octocat/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/octocat/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false,
+    "name": "The Octocat",
+    "company": "@github",
+    "blog": "https://github.blog",
+    "location": "San Francisco",
+    "email": null,
+    "hireable": null,
+    "bio": null,
+    "twitter_username": null,
+    "public_repos": 8,
+    "public_gists": 8,
+    "followers": 23077,
+    "following": 9,
+    "created_at": "2011-01-25T18:44:36Z",
+    "updated_at": "2026-06-22T11:32:20Z"
+}
+
+[2026-06-26 12:30:03] [1] [INFO] JSON schema of version below or equal to draft-04 was detected
+[2026-06-26 12:30:03] [1] [INFO] Validation against Json schema successfully passed
+[2026-06-26 12:30:03] [1] [INFO] TEST [github-api-tests - testGetExistingUser] PASSED at [16:30:03 2026-06-26]

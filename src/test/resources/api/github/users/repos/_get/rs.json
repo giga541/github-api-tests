@@ -1,0 +1,32 @@
+<#-- 
+  Freemarker comment:
+  Returns an array of repository objects for the user.
+  We use ARRAY_CONTAINS for partial matching on at least one repo item.
+-->
+[
+  {
+    "id": "type:Integer",
+    "node_id": "skip",
+    "name": "skip",
+    "full_name": "regex:${username}/.*",
+    "private": "type:Boolean",
+    "owner": {
+      "login": "${username}",
+      "id": "type:Integer",
+      "type": "skip",
+      "site_admin": "type:Boolean"
+    },
+    "html_url": "regex:https://github\\.com/${username}/.*",
+    "description": "skip",
+    "fork": "type:Boolean",
+    "url": "regex:https://api\\.github\\.com/repos/${username}/.*",
+    "stargazers_count": "type:Integer",
+    "forks_count": "type:Integer",
+    "open_issues_count": "type:Integer",
+    "language": "skip",
+    "visibility": "skip",
+    "default_branch": "skip",
+    "created_at": "regex:\\d{4}-\\d{2}-\\d{2}T.*",
+    "updated_at": "regex:\\d{4}-\\d{2}-\\d{2}T.*"
+  }
+]

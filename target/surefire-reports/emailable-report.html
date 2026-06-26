@@ -1,0 +1,65 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "https://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="https://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+<title>TestNG Report</title>
+<style type="text/css">table {margin-bottom:10px;border-collapse:collapse;empty-cells:show}th,td {border:1px solid #009;padding:.25em .5em}th {vertical-align:bottom}td {vertical-align:top}table a {font-weight:bold}.stripe td {background-color: #E6EBF9}.num {text-align:right}.passedodd td {background-color: #3F3}.passedeven td {background-color: #0A0}.skippedodd td {background-color: #DDD}.skippedeven td {background-color: #CCC}.failedodd td,.attn {background-color: #F33}.failedeven td,.stripe .attn {background-color: #D00}.stacktrace {white-space:pre;font-family:monospace}.totop {font-size:85%;text-align:center;border-bottom:2px solid #000}.invisible {display:none}</style>
+</head>
+<body>
+<table>
+<tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
+<tr><th colspan="8">GitHub API Test Suite</th></tr>
+<tr><td><a href="#t0">Endpoint 1 – GET /users/{username}</a></td><td class="num">2</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">2,557</td><td></td><td></td></tr>
+<tr class="stripe"><td><a href="#t1">Endpoint 2 – GET /repos/{owner}/{repo}</a></td><td class="num">2</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">362</td><td></td><td></td></tr>
+<tr><td><a href="#t2">Endpoint 3 – GET /repos/{owner}/{repo}/issues</a></td><td class="num">1</td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">433</td><td></td><td></td></tr>
+<tr class="stripe"><td><a href="#t3">Endpoint 4 – GET /search/repositories</a></td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num attn">2</td><td class="num">96</td><td></td><td></td></tr>
+<tr><td><a href="#t4">Endpoint 5 – GET /users/{username}/repos</a></td><td class="num">3</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">383</td><td></td><td></td></tr>
+<tr><th>Total</th><th class="num">8</th><th class="num">0</th><th class="num">0</th><th class="num attn">3</th><th class="num">3,831</th><th colspan="2"></th></tr>
+</table>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">GitHub API Test Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Endpoint 1 – GET /users/{username} &#8212; passed</th></tr><tr class="passedeven"><td rowspan="2">com.github.api.tests.GitHubApiTest</td><td><a href="#m0">testGetExistingUser</a></td><td rowspan="1">1782477025970</td><td rowspan="1">2453</td></tr><tr class="passedeven"><td><a href="#m1">testGetNonExistentUser</a></td><td rowspan="1">1782477025970</td><td rowspan="1">2453</td></tr></tbody>
+<tbody id="t1"><tr><th colspan="4">Endpoint 2 – GET /repos/{owner}/{repo} &#8212; passed</th></tr><tr class="passedeven"><td rowspan="2">com.github.api.tests.GitHubApiTest</td><td><a href="#m2">testGetExistingRepository</a></td><td rowspan="1">1782477028533</td><td rowspan="1">354</td></tr><tr class="passedeven"><td><a href="#m3">testGetNonExistentRepository</a></td><td rowspan="1">1782477028533</td><td rowspan="1">304</td></tr></tbody>
+<tbody id="t2"><tr><th colspan="4">Endpoint 3 – GET /repos/{owner}/{repo}/issues &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">com.github.api.tests.GitHubApiTest</td><td><a href="#m4">testGetRepoIssues</a></td><td rowspan="1">1782477028898</td><td rowspan="1">418</td></tr><tr><th colspan="4">Endpoint 3 – GET /repos/{owner}/{repo}/issues &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">com.github.api.tests.GitHubApiTest</td><td><a href="#m5">testGetIssuesNonExistentRepo</a></td><td rowspan="1">1782477028899</td><td rowspan="1">268</td></tr></tbody>
+<tbody id="t3"><tr><th colspan="4">Endpoint 4 – GET /search/repositories &#8212; failed</th></tr><tr class="failedeven"><td rowspan="2">com.github.api.tests.GitHubApiTest</td><td><a href="#m6">testSearchRepositoriesWithEmptyQuery</a></td><td rowspan="1">1782477029364</td><td rowspan="1">82</td></tr><tr class="failedeven"><td><a href="#m7">testSearchRepositoriesWithValidQuery</a></td><td rowspan="1">1782477029370</td><td rowspan="1">78</td></tr></tbody>
+<tbody id="t4"><tr><th colspan="4">Endpoint 5 – GET /users/{username}/repos &#8212; passed</th></tr><tr class="passedeven"><td rowspan="3">com.github.api.tests.GitHubApiTest</td><td><a href="#m8">testChainedUserToRepos</a></td><td rowspan="1">1782477029470</td><td rowspan="1">303</td></tr><tr class="passedeven"><td><a href="#m9">testGetReposForNonExistentUser</a></td><td rowspan="1">1782477029469</td><td rowspan="1">305</td></tr><tr class="passedeven"><td><a href="#m10">testGetUserRepos</a></td><td rowspan="1">1782477029471</td><td rowspan="1">374</td></tr></tbody>
+</table>
+<h2>Endpoint 1 – GET /users/{username}</h2><h3 id="m0">com.github.api.tests.GitHubApiTest#testGetExistingUser</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">com.github.api.tests.GitHubApiTest#testGetNonExistentUser</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>Endpoint 2 – GET /repos/{owner}/{repo}</h2><h3 id="m2">com.github.api.tests.GitHubApiTest#testGetExistingRepository</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m3">com.github.api.tests.GitHubApiTest#testGetNonExistentRepository</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>Endpoint 3 – GET /repos/{owner}/{repo}/issues</h2><h3 id="m4">com.github.api.tests.GitHubApiTest#testGetRepoIssues</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.NoClassDefFoundError: org/testng/internal/objects/InstanceCreator
+	at com.zebrunner.agent.testng.core.retry.RetryAnalyzerInterceptor.lambda$getOriginalRetryAnalyzer$1(RetryAnalyzerInterceptor.java:64)
+	at java.base/java.util.concurrent.ConcurrentHashMap.computeIfAbsent(ConcurrentHashMap.java:1708)
+	at com.zebrunner.agent.testng.core.retry.RetryAnalyzerInterceptor.getOriginalRetryAnalyzer(RetryAnalyzerInterceptor.java:62)
+	at com.zebrunner.agent.testng.core.retry.RetryAnalyzerInterceptor.retry(RetryAnalyzerInterceptor.java:36)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:641)
+	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:188)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:525)
+	... 15 more
+... Removed 9 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m5">com.github.api.tests.GitHubApiTest#testGetIssuesNonExistentRepo</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>Endpoint 4 – GET /search/repositories</h2><h3 id="m6">com.github.api.tests.GitHubApiTest#testSearchRepositoriesWithEmptyQuery</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.NoClassDefFoundError: org/testng/internal/objects/InstanceCreator
+	at com.zebrunner.agent.testng.core.retry.RetryAnalyzerInterceptor.lambda$getOriginalRetryAnalyzer$1(RetryAnalyzerInterceptor.java:64)
+	at java.base/java.util.concurrent.ConcurrentHashMap.computeIfAbsent(ConcurrentHashMap.java:1708)
+	at com.zebrunner.agent.testng.core.retry.RetryAnalyzerInterceptor.getOriginalRetryAnalyzer(RetryAnalyzerInterceptor.java:62)
+	at com.zebrunner.agent.testng.core.retry.RetryAnalyzerInterceptor.retry(RetryAnalyzerInterceptor.java:36)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+... Removed 8 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m7">com.github.api.tests.GitHubApiTest#testSearchRepositoriesWithValidQuery</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.NoClassDefFoundError: org/testng/internal/objects/InstanceCreator
+	at com.zebrunner.agent.testng.core.retry.RetryAnalyzerInterceptor.lambda$getOriginalRetryAnalyzer$1(RetryAnalyzerInterceptor.java:64)
+	at java.base/java.util.concurrent.ConcurrentHashMap.computeIfAbsent(ConcurrentHashMap.java:1708)
+	at com.zebrunner.agent.testng.core.retry.RetryAnalyzerInterceptor.getOriginalRetryAnalyzer(RetryAnalyzerInterceptor.java:62)
+	at com.zebrunner.agent.testng.core.retry.RetryAnalyzerInterceptor.retry(RetryAnalyzerInterceptor.java:36)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+... Removed 8 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>Endpoint 5 – GET /users/{username}/repos</h2><h3 id="m8">com.github.api.tests.GitHubApiTest#testChainedUserToRepos</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m9">com.github.api.tests.GitHubApiTest#testGetReposForNonExistentUser</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m10">com.github.api.tests.GitHubApiTest#testGetUserRepos</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+</body>
+</html>

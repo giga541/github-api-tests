@@ -1,0 +1,34 @@
+<#-- 
+  Freemarker comment:
+  GitHub search returns a wrapper object with total_count and an items[] array.
+  We validate the top-level envelope and use ARRAY_CONTAINS for item validation.
+-->
+{
+  "total_count": "type:Integer",
+  "incomplete_results": "type:Boolean",
+  "items": [
+    {
+      "id": "type:Integer",
+      "node_id": "skip",
+      "name": "skip",
+      "full_name": "skip",
+      "private": "type:Boolean",
+      "owner": {
+        "login": "skip",
+        "id": "type:Integer",
+        "type": "skip",
+        "site_admin": "type:Boolean"
+      },
+      "html_url": "regex:https://github\\.com/.*",
+      "description": "skip",
+      "fork": "type:Boolean",
+      "url": "regex:https://api\\.github\\.com/repos/.*",
+      "stargazers_count": "type:Integer",
+      "watchers_count": "type:Integer",
+      "forks_count": "type:Integer",
+      "open_issues_count": "type:Integer",
+      "language": "skip",
+      "score": "skip"
+    }
+  ]
+}

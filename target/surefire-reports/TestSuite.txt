@@ -1,0 +1,63 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 11, Failures: 3, Errors: 0, Skipped: 0, Time elapsed: 7.149 s <<< FAILURE! - in TestSuite
+com.github.api.tests.GitHubApiTest.testGetRepoIssues  Time elapsed: 0.447 s  <<< FAILURE!
+java.lang.NoClassDefFoundError: org/testng/internal/objects/InstanceCreator
+	at com.zebrunner.agent.testng.core.retry.RetryAnalyzerInterceptor.lambda$getOriginalRetryAnalyzer$1(RetryAnalyzerInterceptor.java:64)
+	at java.base/java.util.concurrent.ConcurrentHashMap.computeIfAbsent(ConcurrentHashMap.java:1708)
+	at com.zebrunner.agent.testng.core.retry.RetryAnalyzerInterceptor.getOriginalRetryAnalyzer(RetryAnalyzerInterceptor.java:62)
+	at com.zebrunner.agent.testng.core.retry.RetryAnalyzerInterceptor.retry(RetryAnalyzerInterceptor.java:36)
+	at org.testng.internal.TestInvoker.handleInvocationResults(TestInvoker.java:486)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:638)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+Caused by: java.lang.ClassNotFoundException: org.testng.internal.objects.InstanceCreator
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:641)
+	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:188)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:525)
+	... 15 more
+
+com.github.api.tests.GitHubApiTest.testSearchRepositoriesWithEmptyQuery  Time elapsed: 0.075 s  <<< FAILURE!
+java.lang.NoClassDefFoundError: org/testng/internal/objects/InstanceCreator
+	at com.zebrunner.agent.testng.core.retry.RetryAnalyzerInterceptor.lambda$getOriginalRetryAnalyzer$1(RetryAnalyzerInterceptor.java:64)
+	at java.base/java.util.concurrent.ConcurrentHashMap.computeIfAbsent(ConcurrentHashMap.java:1708)
+	at com.zebrunner.agent.testng.core.retry.RetryAnalyzerInterceptor.getOriginalRetryAnalyzer(RetryAnalyzerInterceptor.java:62)
+	at com.zebrunner.agent.testng.core.retry.RetryAnalyzerInterceptor.retry(RetryAnalyzerInterceptor.java:36)
+	at org.testng.internal.TestInvoker.handleInvocationResults(TestInvoker.java:486)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:638)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+
+com.github.api.tests.GitHubApiTest.testSearchRepositoriesWithValidQuery  Time elapsed: 0.079 s  <<< FAILURE!
+java.lang.NoClassDefFoundError: org/testng/internal/objects/InstanceCreator
+	at com.zebrunner.agent.testng.core.retry.RetryAnalyzerInterceptor.lambda$getOriginalRetryAnalyzer$1(RetryAnalyzerInterceptor.java:64)
+	at java.base/java.util.concurrent.ConcurrentHashMap.computeIfAbsent(ConcurrentHashMap.java:1708)
+	at com.zebrunner.agent.testng.core.retry.RetryAnalyzerInterceptor.getOriginalRetryAnalyzer(RetryAnalyzerInterceptor.java:62)
+	at com.zebrunner.agent.testng.core.retry.RetryAnalyzerInterceptor.retry(RetryAnalyzerInterceptor.java:36)
+	at org.testng.internal.TestInvoker.handleInvocationResults(TestInvoker.java:486)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:638)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+

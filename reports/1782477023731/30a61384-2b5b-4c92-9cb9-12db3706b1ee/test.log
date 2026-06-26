@@ -1,0 +1,44 @@
+[2026-06-26 12:30:29] [48] [WARN] Reporting disabled: using no op test run registrar
+[2026-06-26 12:30:29] [48] [INFO] TEST [Endpoint 5 – GET /users/{username}/repos - testGetReposForNonExistentUser] STARTED at [16:30:29 2026-06-26]
+[2026-06-26 12:30:29] [48] [INFO] Request method:	GET
+Request URI:	https://api.github.com/users/this-user-does-not-exist-xyz-999/repos
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Multiparts:		<none>
+Cookies:		<none>
+Headers:		Accept=*/*
+				Content-Type=application/json; charset=UTF-8
+Body:			<none>
+HTTP/1.1 404 Not Found
+Date: Fri, 26 Jun 2026 12:30:08 GMT
+Content-Type: application/json; charset=utf-8
+X-GitHub-Media-Type: github.v3; format=json
+x-github-api-version-selected: 2022-11-28
+Access-Control-Expose-Headers: ETag, Link, Location, Retry-After, X-GitHub-OTP, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Used, X-RateLimit-Resource, X-RateLimit-Reset, X-OAuth-Scopes, X-Accepted-OAuth-Scopes, X-Poll-Interval, X-GitHub-Media-Type, X-GitHub-SSO, X-GitHub-Request-Id, Deprecation, Sunset, Warning
+Access-Control-Allow-Origin: *
+Strict-Transport-Security: max-age=31536000; includeSubdomains; preload
+X-Frame-Options: deny
+X-Content-Type-Options: nosniff
+X-XSS-Protection: 0
+Referrer-Policy: origin-when-cross-origin, strict-origin-when-cross-origin
+Content-Security-Policy: default-src 'none'
+Vary: Accept-Encoding, Accept, X-Requested-With
+Content-Encoding: gzip
+Server: github.com
+X-RateLimit-Limit: 60
+X-RateLimit-Remaining: 43
+X-RateLimit-Used: 17
+X-RateLimit-Resource: core
+X-RateLimit-Reset: 1782480604
+Content-Length: 127
+X-GitHub-Request-Id: FF4E:9C09F:377246:3499BD:6A3E70E8
+
+{
+    "message": "Not Found",
+    "documentation_url": "https://docs.github.com/rest/repos/repos#list-repositories-for-a-user",
+    "status": "404"
+}
+
+[2026-06-26 12:30:29] [48] [INFO] TEST [Endpoint 5 – GET /users/{username}/repos - testGetReposForNonExistentUser] PASSED at [16:30:29 2026-06-26]
