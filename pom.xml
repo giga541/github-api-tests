@@ -18,6 +18,7 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <carina.version>8.0.4</carina.version>
         <testng.version>7.4.0</testng.version>
+        <suite>saucedemo_suite</suite>
     </properties>
 
     <dependencies>
@@ -62,7 +63,7 @@
                     <argLine>-Dtestng.dtd.http=true</argLine>
                     <suiteXmlFiles>
                         <suiteXmlFile>
-                            src/test/resources/testng_suites/github_api_suite.xml
+                            src/test/resources/testng_suites/${suite}.xml
                         </suiteXmlFile>
                     </suiteXmlFiles>
                 </configuration>
