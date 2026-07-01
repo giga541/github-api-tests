@@ -36,8 +36,8 @@ public class ProductCard extends AbstractUIObject {
         return nameLink;
     }
 
-    public ExtendedWebElement getPrice() {
-        return price;
+    public double getPrice() {
+        return Double.parseDouble(price.getText().replace("$", ""));
     }
 
     public void clickNameLink() {

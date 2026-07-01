@@ -33,7 +33,4 @@ public class LoginPage extends AbstractPage {
     public boolean isErrorDisplayed() {
         return errorMessage.isElementPresent();
     }
-
-    public void open(String baseUrl) {
-    }
 }
