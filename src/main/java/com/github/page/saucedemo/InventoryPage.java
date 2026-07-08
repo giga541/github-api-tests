@@ -19,7 +19,7 @@ public class InventoryPage extends AbstractPage {
     @FindBy(xpath = "//a[@data-test='shopping-cart-link']")
     private ExtendedWebElement cartIcon;
 
-    @FindBy(xpath = ".//div[@data-test='inventory-item']")
+    @FindBy(xpath = "//div[@data-test='inventory-item']")
     private List<ProductCard> productCards;
 
     public InventoryPage(WebDriver driver) {

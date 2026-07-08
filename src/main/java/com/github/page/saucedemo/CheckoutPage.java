@@ -29,11 +29,12 @@ public class CheckoutPage extends AbstractPage {
         super(driver);
     }
 
-    public void fillInfo(String first, String last, String zip) {
+    public CheckoutPage fillInfo(String first, String last, String zip) {
         firstName.type(first);
         lastName.type(last);
         postalCode.type(zip);
         continueButton.click();
+        return new CheckoutPage(driver);
     }
 
     public void finish() {

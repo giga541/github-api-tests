@@ -72,4 +72,40 @@ public class SauceDemoTest implements IAbstractTest {
                     "Products should be sorted low to high but found " + current + " before " + next);
         }
     }
+
+    // Test 4: Complete full checkout flow
+    @Test
+    public void testCompleteCheckoutFlow() {
+        LoginPage loginPage = new LoginPage(getDriver());
+        loginPage.open();
+        InventoryPage inventoryPage = loginPage.login(username, password);
+
+        inventoryPage.getProductCards().get(0).addToCart();
+
+        CartPage cartPage = inventoryPage.goToCart();
+        CheckoutPage checkoutPage = cartPage.proceedToCheckout();
+        CheckoutPage checkoutPageTwo = checkoutPage.fillInfo("John", "Doe", "12345");
+        checkoutPageTwo.finish();
+
+        Assert.assertEquals(checkoutPageTwo.getConfirmationMessage(), "Thank you for your order!",
+                "Should see order confirmation message");
+    }
+
+//     Test 5: Remove item from cart
+        @Test
+        public void testRemoveItemFromCart() {
+            LoginPage loginPage = new LoginPage(getDriver());
+            loginPage.open();
+            InventoryPage inventoryPage = loginPage.login(username, password);
+
+            inventoryPage.getProductCards().get(0).addToCart();
+            CartPage cartPage = inventoryPage.goToCart();
+
+            cartPage.getCartItems().get(0).remove();
+
+            Assert.assertEquals(cartPage.getItemCount(), 0,
+                    "Cart should be empty after removing the item");
+        Assert.assertFalse(cartPage.isBadgePresent(),
+                "Cart badge should not be present when cart is empty");
+}
 }

@@ -14,7 +14,7 @@ public class CartItem extends AbstractUIObject {
     @FindBy(xpath = ".//div[@data-test='inventory-item-price']")
     private ExtendedWebElement price;
 
-    @FindBy(xpath = "//button[@id='remove']")
+    @FindBy(xpath = ".//button[contains(@data-test,'remove')]")
     private ExtendedWebElement removeButton;
 
     public CartItem(WebDriver driver, SearchContext searchContext) {

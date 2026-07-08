@@ -15,7 +15,8 @@ public class CartPage extends AbstractPage {
     @FindBy(xpath = "//button[@id='checkout']")
     private ExtendedWebElement checkoutButton;
 
-    //cartBadge
+    @FindBy(xpath = "//span[@data-test='shopping-cart-badge']")
+    private ExtendedWebElement cartBadge;
 
     public CartPage(WebDriver driver) {
         super(driver);
@@ -24,6 +25,8 @@ public class CartPage extends AbstractPage {
     public List<CartItem> getCartItems() { return cartItems; }
 
     public int getItemCount() { return cartItems.size(); }
+
+    public boolean isBadgePresent() { return cartBadge.isElementPresent(2); }
 
     public CheckoutPage proceedToCheckout() {
         checkoutButton.click();
