@@ -21,7 +21,11 @@ public class CartItem extends AbstractUIObject {
         super(driver, searchContext);
     }
 
-    public String getName() { return name.getText(); }
+    public String getName() {
+        return name.getText();
+    }
 
-    public void remove() { removeButton.click(); }
+    public void remove() {
+        removeButton.click();
+    }
 }

@@ -10,7 +10,7 @@ public class CheckoutPage extends AbstractPage {
     @FindBy(xpath = "//input[@id='first-name']")
     private ExtendedWebElement firstName;
 
-    @FindBy(id = "//input[@id='last-name']")
+    @FindBy(xpath = "//input[@id='last-name']")
     private ExtendedWebElement lastName;
 
     @FindBy(xpath = "//input[@id='postal-code']")

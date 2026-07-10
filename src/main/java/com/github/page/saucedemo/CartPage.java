@@ -5,6 +5,7 @@ import com.zebrunner.carina.webdriver.gui.AbstractPage;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.FindBy;
 import com.zebrunner.carina.webdriver.decorator.ExtendedWebElement;
+
 import java.util.List;
 
 public class CartPage extends AbstractPage {
@@ -22,11 +23,17 @@ public class CartPage extends AbstractPage {
         super(driver);
     }
 
-    public List<CartItem> getCartItems() { return cartItems; }
+    public List<CartItem> getCartItems() {
+        return cartItems;
+    }
 
-    public int getItemCount() { return cartItems.size(); }
+    public int getItemCount() {
+        return cartItems.size();
+    }
 
-    public boolean isBadgePresent() { return cartBadge.isElementPresent(2); }
+    public boolean isBadgePresent() {
+        return cartBadge.isElementPresent(2);
+    }
 
     public CheckoutPage proceedToCheckout() {
         checkoutButton.click();

@@ -11,7 +11,7 @@ public class ProductCard extends AbstractUIObject {
     @FindBy(xpath = ".//img")
     private ExtendedWebElement image;
 
-    @FindBy(xpath = ".//div//a//div")
+    @FindBy(xpath = ".//div[@data-test='inventory-item-name']")
     private ExtendedWebElement nameLink;
 
     @FindBy(xpath = ".//div[@data-test='inventory-item-price']")

@@ -4,7 +4,6 @@ import com.github.page.saucedemo.CartPage;
 import com.github.page.saucedemo.CheckoutPage;
 import com.github.page.saucedemo.InventoryPage;
 import com.github.page.saucedemo.LoginPage;
-import com.github.page.saucedemo.components.CartItem;
 import com.github.page.saucedemo.components.ProductCard;
 import com.zebrunner.carina.core.IAbstractTest;
 import com.zebrunner.carina.utils.config.Configuration;
